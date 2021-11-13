@@ -115,9 +115,8 @@
 
         "drop-test-db": "bin/console doctrine:schema:drop --force --env=test",
         "create-test-db": "bin/console doctrine:schema:create --env=test",
-        "test": "bin/phpunit --testdox",
-        "test-unit": "bin/phpunit --testdox --testsuite Unit",
-        "test-functional": "bin/phpunit --testdox --testsuite Functional"
+        "test-unit": "bin/phpunit --testsuite Unit",
+        "test-functional": "bin/phpunit --testsuite Functional"
     },
     "conflict": {
         "symfony/symfony": "*"
