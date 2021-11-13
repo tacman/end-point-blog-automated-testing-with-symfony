@@ -4,11 +4,11 @@
     "type": "project",
     "license": "proprietary",
     "require": {
-        "php": ">=7.4",
+        "php": ">= 7.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "psr/link": "^1.1.1",
-        "psr/log": "^1.1.0",
+        "psr/link": "^1.0.0",
+        "psr/log": "^1.1.4",
         "psr/cache": "^1.0.1",
         "composer/package-versions-deprecated": "^1.11",
         "doctrine/annotations": "^1.0",
@@ -123,6 +123,7 @@
         "symfony/symfony": "*"
     },
     "extra": {
+        "php": "7.4",
         "symfony": {
             "allow-contrib": false,
             "require": ">= 5.3"
