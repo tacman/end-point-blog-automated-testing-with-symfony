@@ -21,6 +21,7 @@ jobs:
                     coverage: none
                     extensions: intl
             -   run: composer install --no-progress
-#            -   run: composer codestyle
-            -   run: composer phpstan
+            -   run: composer drop-test-db
+            -   run: composer create-test-db
+#           -   run: composer phpstan
             -   run: composer tests
