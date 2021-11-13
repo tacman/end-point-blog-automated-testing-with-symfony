@@ -45,8 +45,10 @@ class WeatherServiceTest extends TestCase
     {
         // Arrange
         $validator = Validation::createValidatorBuilder()
-            ->enableAnnotationMapping()
-            ->getValidator();
+            ->enableAnnotationMapping(true)
+            ->addDefaultDoctrineAnnotationReader()
+            ->getValidator()
+        ;
 
         $mockRepository = $this->createMock(WeatherQueryRepository::class);
         $mockApiClient = $this->createMock(WeatherApiClient::class);
@@ -68,8 +70,10 @@ class WeatherServiceTest extends TestCase
     {
         // Arrange
         $validator = Validation::createValidatorBuilder()
-            ->enableAnnotationMapping()
-            ->getValidator();
+            ->enableAnnotationMapping(true)
+            ->addDefaultDoctrineAnnotationReader()
+            ->getValidator()
+        ;
 
         $mockRepository = $this->createMock(WeatherQueryRepository::class);
         $mockApiClient = $this->createMock(WeatherApiClient::class);
@@ -93,7 +97,7 @@ class WeatherServiceTest extends TestCase
     {
         // Arrange
         $validator = Validation::createValidatorBuilder()
-            ->enableAnnotationMapping()
+            ->enableAnnotationMapping(true)->addDefaultDoctrineAnnotationReader()
             ->getValidator();
 
         $mockRepository = $this->createMock(WeatherQueryRepository::class);
@@ -116,7 +120,7 @@ class WeatherServiceTest extends TestCase
     {
         // Arrange
         $validator = Validation::createValidatorBuilder()
-            ->enableAnnotationMapping()
+            ->enableAnnotationMapping(true)->addDefaultDoctrineAnnotationReader()
             ->getValidator();
 
         $mockRepository = $this->createMock(WeatherQueryRepository::class);
@@ -139,7 +143,7 @@ class WeatherServiceTest extends TestCase
     {
         // Arrange
         $validator = Validation::createValidatorBuilder()
-            ->enableAnnotationMapping()
+            ->enableAnnotationMapping(true)->addDefaultDoctrineAnnotationReader()
             ->getValidator();
 
         $mockRepository = $this->createMock(WeatherQueryRepository::class);
@@ -162,7 +166,7 @@ class WeatherServiceTest extends TestCase
     {
         // Arrange
         $validator = Validation::createValidatorBuilder()
-            ->enableAnnotationMapping()
+            ->enableAnnotationMapping(true)->addDefaultDoctrineAnnotationReader()
             ->getValidator();
 
         $mockRepository = $this->createMock(WeatherQueryRepository::class);
@@ -185,7 +189,7 @@ class WeatherServiceTest extends TestCase
     {
         // Arrange
         $validator = Validation::createValidatorBuilder()
-            ->enableAnnotationMapping()
+            ->enableAnnotationMapping(true)->addDefaultDoctrineAnnotationReader()
             ->getValidator();
 
         $mockRepository = $this->createMock(WeatherQueryRepository::class);
@@ -211,7 +215,7 @@ class WeatherServiceTest extends TestCase
     {
         // Arrange
         $validator = Validation::createValidatorBuilder()
-            ->enableAnnotationMapping()
+            ->enableAnnotationMapping(true)->addDefaultDoctrineAnnotationReader()
             ->getValidator();
 
         $mockRepository = $this->createMock(WeatherQueryRepository::class);
@@ -246,7 +250,7 @@ class WeatherServiceTest extends TestCase
     {
         // Arrange
         $validator = Validation::createValidatorBuilder()
-            ->enableAnnotationMapping()
+            ->enableAnnotationMapping(true)->addDefaultDoctrineAnnotationReader()
             ->getValidator();
 
         $mockRepository = $this->createMock(WeatherQueryRepository::class);
@@ -278,7 +282,7 @@ class WeatherServiceTest extends TestCase
     {
         // Arrange
         $validator = Validation::createValidatorBuilder()
-            ->enableAnnotationMapping()
+            ->enableAnnotationMapping(true)->addDefaultDoctrineAnnotationReader()
             ->getValidator();
 
         $mockRepository = $this->createMock(WeatherQueryRepository::class);
@@ -305,7 +309,7 @@ class WeatherServiceTest extends TestCase
     {
         // Arrange
         $validator = Validation::createValidatorBuilder()
-            ->enableAnnotationMapping()
+            ->enableAnnotationMapping(true)->addDefaultDoctrineAnnotationReader()
             ->getValidator();
 
         $mockRepository = $this->createMock(WeatherQueryRepository::class);
@@ -334,7 +338,7 @@ class WeatherServiceTest extends TestCase
     {
         // Arrange
         $validator = Validation::createValidatorBuilder()
-            ->enableAnnotationMapping()
+            ->enableAnnotationMapping(true)->addDefaultDoctrineAnnotationReader()
             ->getValidator();
 
         $mockRepository = $this->createMock(WeatherQueryRepository::class);
@@ -362,7 +366,7 @@ class WeatherServiceTest extends TestCase
     {
         // Arrange
         $validator = Validation::createValidatorBuilder()
-            ->enableAnnotationMapping()
+            ->enableAnnotationMapping(true)->addDefaultDoctrineAnnotationReader()
             ->getValidator();
 
         $mockRepository = $this->createMock(WeatherQueryRepository::class);
@@ -397,7 +401,7 @@ class WeatherServiceTest extends TestCase
     {
         // Arrange
         $validator = Validation::createValidatorBuilder()
-            ->enableAnnotationMapping()
+            ->enableAnnotationMapping(true)->addDefaultDoctrineAnnotationReader()
             ->getValidator();
 
         $mockRepository = $this->createMock(WeatherQueryRepository::class);

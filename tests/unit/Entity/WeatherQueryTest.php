@@ -63,7 +63,7 @@ class WeatherQueryTest extends TestCase
         $this->assertEquals(
             (new DateTime())->getTimestamp(),
             $result->getCreated()->getTimestamp(),
-            '', 1
+            ''
         );
     }
 
@@ -77,8 +77,10 @@ class WeatherQueryTest extends TestCase
         $subject = WeatherQuery::build($city, $state);
 
         $validator = Validation::createValidatorBuilder()
-            ->enableAnnotationMapping()
-            ->getValidator();
+            ->enableAnnotationMapping(true)
+            ->addDefaultDoctrineAnnotationReader()
+            ->getValidator()
+            ;
 
         // Act
         $result = $validator->validate($subject);
